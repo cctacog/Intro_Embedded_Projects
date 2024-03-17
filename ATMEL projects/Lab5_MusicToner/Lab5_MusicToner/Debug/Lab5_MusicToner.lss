@@ -1,0 +1,297 @@
+
+Lab5_MusicToner.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  000001bc  00000230  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001bc  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000240  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000270  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  000002b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a3d  00000000  00000000  000002e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000941  00000000  00000000  00000d25  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000336  00000000  00000000  00001666  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  0000199c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000004c0  00000000  00000000  000019f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000054  00000000  00000000  00001eb0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001f04  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__ctors_end>
+   4:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+   8:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+   c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  10:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  14:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  18:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  1c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  20:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  24:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  28:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  2c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  30:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  34:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  38:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  3c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  40:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  44:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  48:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  4c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  50:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  54:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  58:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  5c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  60:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  64:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  68:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  6c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  70:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  74:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  78:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  7c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  80:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  84:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  88:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  8c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  90:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  94:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  98:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  9c:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  a0:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  a4:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  a8:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  ac:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+  b0:	0c 94 6f 00 	jmp	0xde	; 0xde <__bad_interrupt>
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_copy_data>:
+  c0:	11 e0       	ldi	r17, 0x01	; 1
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	ec eb       	ldi	r30, 0xBC	; 188
+  c8:	f1 e0       	ldi	r31, 0x01	; 1
+  ca:	02 c0       	rjmp	.+4      	; 0xd0 <__do_copy_data+0x10>
+  cc:	05 90       	lpm	r0, Z+
+  ce:	0d 92       	st	X+, r0
+  d0:	a0 31       	cpi	r26, 0x10	; 16
+  d2:	b1 07       	cpc	r27, r17
+  d4:	d9 f7       	brne	.-10     	; 0xcc <__do_copy_data+0xc>
+  d6:	0e 94 d5 00 	call	0x1aa	; 0x1aa <main>
+  da:	0c 94 dc 00 	jmp	0x1b8	; 0x1b8 <_exit>
+
+000000de <__bad_interrupt>:
+  de:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000e2 <init_IO>:
+};
+
+void init_IO()
+{
+	//from lab 3:
+	DDRD |= (1 << 0)|(1 << 1)|(1 << 2)|(1 << 3)|(1<<5);//SET PORT D TO OUTPUT
+  e2:	8a b1       	in	r24, 0x0a	; 10
+  e4:	8f 62       	ori	r24, 0x2F	; 47
+  e6:	8a b9       	out	0x0a, r24	; 10
+	DDRB &= ~(1 << 0)|~(1 << 1)|~(1 << 2)|~(1 << 3);//SET PORT B TO INPUT [PIN]
+  e8:	84 b1       	in	r24, 0x04	; 4
+  ea:	84 b9       	out	0x04, r24	; 4
+	PORTB |= (1 << 0)|(1 << 1)|(1 << 2)|(1 << 3);//SET PIN B TO PULL UP RESISTOR
+  ec:	85 b1       	in	r24, 0x05	; 5
+  ee:	8f 60       	ori	r24, 0x0F	; 15
+  f0:	85 b9       	out	0x05, r24	; 5
+	
+	//PRESET THE OUTPUTS ALL AS HIGH
+	PIND |= (1 << 0)|(1 << 1)|(1 << 2)|(1 << 3); 
+  f2:	89 b1       	in	r24, 0x09	; 9
+  f4:	8f 60       	ori	r24, 0x0F	; 15
+  f6:	89 b9       	out	0x09, r24	; 9
+  f8:	08 95       	ret
+
+000000fa <init_Timer>:
+}
+
+void init_Timer()
+{
+	TCCR0A |= (1 << WGM01) | (1 << WGM00) | (1 << COM0B1); // Set the Timer Mode to CTC
+  fa:	84 b5       	in	r24, 0x24	; 36
+  fc:	83 62       	ori	r24, 0x23	; 35
+  fe:	84 bd       	out	0x24, r24	; 36
+	OCR0A = 0xfd;
+ 100:	8d ef       	ldi	r24, 0xFD	; 253
+ 102:	87 bd       	out	0x27, r24	; 39
+	OCR0B = OCR0A;
+ 104:	87 b5       	in	r24, 0x27	; 39
+ 106:	88 bd       	out	0x28, r24	; 40
+		256 -> 16u * 256 = 4068u = 4.068m < ~4.54m
+		1024 -> 16u * 1024 = 16384u = 16.384m > ~4.54m 
+	** general pre scale for program to run smooth at 1024 system clock **
+	*/
+	// set pre scaler to 1024 and start the timer to have the max be 10ms 
+	TCCR0B |= (1 << WGM02) | (1 << CS02) | (1 << CS00);
+ 108:	85 b5       	in	r24, 0x25	; 37
+ 10a:	8d 60       	ori	r24, 0x0D	; 13
+ 10c:	85 bd       	out	0x25, r24	; 37
+ 10e:	08 95       	ret
+
+00000110 <keyPad_checker>:
+}
+
+void keyPad_checker()
+{
+	for(uint8_t i = 0; i < 4; ++i)//loop through each row as PORTD0-3 (four total)
+ 110:	50 e0       	ldi	r21, 0x00	; 0
+ 112:	47 c0       	rjmp	.+142    	; 0x1a2 <keyPad_checker+0x92>
+	{
+		//turning off the output to the keypad at row i
+		PORTD &= ~(1 << i);
+ 114:	8b b1       	in	r24, 0x0b	; 11
+ 116:	e5 2f       	mov	r30, r21
+ 118:	f0 e0       	ldi	r31, 0x00	; 0
+ 11a:	61 e0       	ldi	r22, 0x01	; 1
+ 11c:	70 e0       	ldi	r23, 0x00	; 0
+ 11e:	05 2e       	mov	r0, r21
+ 120:	02 c0       	rjmp	.+4      	; 0x126 <keyPad_checker+0x16>
+ 122:	66 0f       	add	r22, r22
+ 124:	77 1f       	adc	r23, r23
+ 126:	0a 94       	dec	r0
+ 128:	e2 f7       	brpl	.-8      	; 0x122 <keyPad_checker+0x12>
+ 12a:	96 2f       	mov	r25, r22
+ 12c:	90 95       	com	r25
+ 12e:	89 23       	and	r24, r25
+ 130:	8b b9       	out	0x0b, r24	; 11
+		for(uint8_t j = 0; j < 4; ++j)//loop through each column PORTB0-3 (four total)
+ 132:	40 e0       	ldi	r20, 0x00	; 0
+ 134:	30 c0       	rjmp	.+96     	; 0x196 <keyPad_checker+0x86>
+		{
+			if(!(PINB & (1 << j)))//if there is a short of a row then the input will be 0
+ 136:	83 b1       	in	r24, 0x03	; 3
+ 138:	24 2f       	mov	r18, r20
+ 13a:	30 e0       	ldi	r19, 0x00	; 0
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	04 2e       	mov	r0, r20
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <keyPad_checker+0x36>
+ 142:	95 95       	asr	r25
+ 144:	87 95       	ror	r24
+ 146:	0a 94       	dec	r0
+ 148:	e2 f7       	brpl	.-8      	; 0x142 <keyPad_checker+0x32>
+ 14a:	80 fd       	sbrc	r24, 0
+ 14c:	1f c0       	rjmp	.+62     	; 0x18c <keyPad_checker+0x7c>
+			{
+				OCR0A = vals[3- i][3 - j] - 1;
+ 14e:	83 e0       	ldi	r24, 0x03	; 3
+ 150:	90 e0       	ldi	r25, 0x00	; 0
+ 152:	dc 01       	movw	r26, r24
+ 154:	ae 1b       	sub	r26, r30
+ 156:	bf 0b       	sbc	r27, r31
+ 158:	82 1b       	sub	r24, r18
+ 15a:	93 0b       	sbc	r25, r19
+ 15c:	aa 0f       	add	r26, r26
+ 15e:	bb 1f       	adc	r27, r27
+ 160:	aa 0f       	add	r26, r26
+ 162:	bb 1f       	adc	r27, r27
+ 164:	a0 50       	subi	r26, 0x00	; 0
+ 166:	bf 4f       	sbci	r27, 0xFF	; 255
+ 168:	a8 0f       	add	r26, r24
+ 16a:	b9 1f       	adc	r27, r25
+ 16c:	8c 91       	ld	r24, X
+ 16e:	81 50       	subi	r24, 0x01	; 1
+ 170:	87 bd       	out	0x27, r24	; 39
+				//default truncation will suffice
+				OCR0B = (OCR0A / 2);//50% duty cycle
+ 172:	87 b5       	in	r24, 0x27	; 39
+ 174:	86 95       	lsr	r24
+ 176:	88 bd       	out	0x28, r24	; 40
+				while(!(PINB & (1 << j)));
+ 178:	83 b1       	in	r24, 0x03	; 3
+ 17a:	90 e0       	ldi	r25, 0x00	; 0
+ 17c:	02 2e       	mov	r0, r18
+ 17e:	02 c0       	rjmp	.+4      	; 0x184 <keyPad_checker+0x74>
+ 180:	95 95       	asr	r25
+ 182:	87 95       	ror	r24
+ 184:	0a 94       	dec	r0
+ 186:	e2 f7       	brpl	.-8      	; 0x180 <keyPad_checker+0x70>
+ 188:	80 ff       	sbrs	r24, 0
+ 18a:	f6 cf       	rjmp	.-20     	; 0x178 <keyPad_checker+0x68>
+			}
+			OCR0A = 0xFD;
+ 18c:	8d ef       	ldi	r24, 0xFD	; 253
+ 18e:	87 bd       	out	0x27, r24	; 39
+			OCR0B = OCR0A;
+ 190:	87 b5       	in	r24, 0x27	; 39
+ 192:	88 bd       	out	0x28, r24	; 40
+{
+	for(uint8_t i = 0; i < 4; ++i)//loop through each row as PORTD0-3 (four total)
+	{
+		//turning off the output to the keypad at row i
+		PORTD &= ~(1 << i);
+		for(uint8_t j = 0; j < 4; ++j)//loop through each column PORTB0-3 (four total)
+ 194:	4f 5f       	subi	r20, 0xFF	; 255
+ 196:	44 30       	cpi	r20, 0x04	; 4
+ 198:	70 f2       	brcs	.-100    	; 0x136 <keyPad_checker+0x26>
+				while(!(PINB & (1 << j)));
+			}
+			OCR0A = 0xFD;
+			OCR0B = OCR0A;
+		}
+		PORTD |= (1 << i);//return the output of 1 to current row
+ 19a:	8b b1       	in	r24, 0x0b	; 11
+ 19c:	68 2b       	or	r22, r24
+ 19e:	6b b9       	out	0x0b, r22	; 11
+	TCCR0B |= (1 << WGM02) | (1 << CS02) | (1 << CS00);
+}
+
+void keyPad_checker()
+{
+	for(uint8_t i = 0; i < 4; ++i)//loop through each row as PORTD0-3 (four total)
+ 1a0:	5f 5f       	subi	r21, 0xFF	; 255
+ 1a2:	54 30       	cpi	r21, 0x04	; 4
+ 1a4:	08 f4       	brcc	.+2      	; 0x1a8 <keyPad_checker+0x98>
+ 1a6:	b6 cf       	rjmp	.-148    	; 0x114 <keyPad_checker+0x4>
+			OCR0A = 0xFD;
+			OCR0B = OCR0A;
+		}
+		PORTD |= (1 << i);//return the output of 1 to current row
+	}
+}
+ 1a8:	08 95       	ret
+
+000001aa <main>:
+
+int main(void)
+{    
+	init_IO();
+ 1aa:	0e 94 71 00 	call	0xe2	; 0xe2 <init_IO>
+	init_Timer();
+ 1ae:	0e 94 7d 00 	call	0xfa	; 0xfa <init_Timer>
+    while (1) 
+    {
+		keyPad_checker();
+ 1b2:	0e 94 88 00 	call	0x110	; 0x110 <keyPad_checker>
+ 1b6:	fd cf       	rjmp	.-6      	; 0x1b2 <main+0x8>
+
+000001b8 <_exit>:
+ 1b8:	f8 94       	cli
+
+000001ba <__stop_program>:
+ 1ba:	ff cf       	rjmp	.-2      	; 0x1ba <__stop_program>
